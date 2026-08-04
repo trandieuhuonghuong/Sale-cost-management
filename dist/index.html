@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0f766e" />
   <title>SalesCost Pro - Quản lý chi phí bán hàng</title>
-  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="stylesheet" href="/assets/styles-v2.css?v=20260804-2" />
 </head>
 <body>
   <div class="app-shell">
@@ -38,6 +38,14 @@
     </div>
   </div>
   <div class="toast" id="toast"></div>
-  <script src="/assets/app.js"></script>
+  <script>
+window.addEventListener('error', function (event) {
+  const app = document.getElementById('app');
+  if (app && !app.innerHTML.trim()) {
+    app.innerHTML = '<div style="margin:24px;padding:20px;background:#fff;border:1px solid #fecaca;border-radius:12px;color:#991b1b"><b>Ứng dụng chưa tải được.</b><br>Hãy nhấn Ctrl + Shift + R. Nếu vẫn còn lỗi, kiểm tra file /assets/app-v2.js trên Vercel.</div>';
+  }
+});
+</script>
+<script defer src="/assets/app-v2.js?v=20260804-2"></script>
 </body>
 </html>

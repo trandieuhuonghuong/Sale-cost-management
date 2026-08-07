@@ -1,12 +1,16 @@
-# SalesCost Pro – Kiểm soát ngân sách và chi phí
+# SalesCost Pro – Quy trình Ngân sách & Chi phí tách riêng
 
-Bản cập nhật có dữ liệu mẫu và các quy tắc:
+Bản này sửa phần thao tác và nghiệp vụ:
 
-- Ngân sách được quản lý theo bộ phận, kỳ và hạng mục.
-- Điều chỉnh tăng/giảm cập nhật trực tiếp ngân sách; không được giảm thấp hơn số đã sử dụng.
-- Chi phí bắt buộc liên kết đúng ngân sách, đúng kỳ, đúng hạng mục và không vượt số dư.
-- Chi phí không thể hoàn thành nếu hồ sơ tài liệu chưa đầy đủ và chưa được duyệt.
-- Cảnh báo khi tạo chi phí cùng loại cho kỳ mới nhưng kỳ trước còn tài liệu thiếu/hoàn trả/chờ kiểm tra.
+- Ngân sách là quy trình phê duyệt riêng: Người nộp đơn → Trưởng bộ phận → Tài vụ → Đang thực hiện.
+- Chỉ ngân sách ở trạng thái **Đang thực hiện** mới được dùng để tạo đăng ký chi phí.
+- Chi phí là một quy trình phê duyệt riêng, bắt buộc liên kết đúng **năm/kỳ/hạng mục** của ngân sách.
+- Chi phí không được vượt số ngân sách còn có thể xin; hệ thống tính cả khoản đã sử dụng và khoản đang giữ chỗ.
+- Khi bắt đầu thực hiện chi phí, số tiền được ghi nhận vào phần đã sử dụng của ngân sách.
+- Chi phí chỉ hoàn thành khi tài liệu bắt buộc đã được duyệt đầy đủ.
+- Các nút thao tác dùng event delegation để tránh lỗi onclick: Nộp đơn, Lấy lại đơn, Hủy bỏ, Từ chối, Hoàn trả, Phê duyệt.
 
 ## Vercel
-Framework: Other; Build Command: npm run build; Output Directory: dist.
+- Framework: Other
+- Build Command: `npm run build`
+- Output Directory: `dist`

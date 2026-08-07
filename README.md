@@ -14,3 +14,9 @@ Bản này sửa phần thao tác và nghiệp vụ:
 - Framework: Other
 - Build Command: `npm run build`
 - Output Directory: `dist`
+
+
+## Cập nhật mới
+- Chi phí tách thành Chi phí và Điều chỉnh chi phí.
+- Doanh thu mục tiêu và Báo cáo bán hàng: Năm nhập 4 số; kỳ chọn Năm/Tháng/Ngày; nội dung tự sinh.
+- Năm ngân sách cũng nhập trực tiếp 4 số.
